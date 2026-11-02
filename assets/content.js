@@ -251,3 +251,15 @@ const GLOSSARY = [
   { match: "ICU", full: "intensive care unit", def: "A hospital unit providing the highest level of monitoring and organ support for critically ill patients." },
   { match: "SpO2", full: "peripheral oxygen saturation", def: "Oxygen saturation of the blood as measured non-invasively, typically by pulse oximetry." }
 ];
+
+// Clinical agent (drug) names to visually emphasise wherever they appear —
+// in the diagram boxes themselves and in the readout panel's prose. This
+// is a rendering-only concern (app.js wraps each match in a styled span at
+// render time); it never touches label/sub, which stay byte-exact as
+// authored. Matching is case-insensitive and whole-word, longest name
+// first.
+// Added at Dr. Özgür Karcıoğlu's request, 2026-11-02 — see METHODOLOGY.md.
+const AGENTS = [
+  "Oseltamivir",
+  "Baloxavir"
+];
