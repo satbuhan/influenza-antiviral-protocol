@@ -14,6 +14,11 @@
    any secondary summary.
    ========================================================================= */
 
+// Date this tool's content and citations were last built/checked
+// together (see assets/app.js's References summary, and the hub
+// README's "Content search index"-adjacent conventions doc).
+const VERIFIED = "2026-10-26";
+
 const REFERENCES = [
   {
     id: 1,
